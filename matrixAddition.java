@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class prac {
+public class matrixAddition {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the size of first matrix: ");
