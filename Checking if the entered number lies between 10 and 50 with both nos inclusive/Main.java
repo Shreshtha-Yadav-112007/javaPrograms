@@ -10,5 +10,6 @@ public class Main
 		}else if(num>50 || num<10){
 		System.out.println("Entered number is NOT greater than 10 and less than 50");
 		}
+		sc.close();
 	}
 }

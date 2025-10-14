@@ -3,9 +3,11 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		double r = sc.nextDouble();
-		double area_of_circle = Math.PI*r*r;
-		System.out.printf("Area of circle is %.2f",area_of_circle);
+		int [] arr = new int[5];
+		for (int i=0;i<arr.length;i++){
+		    arr[i] = 10*(i+1);
+		    System.out.println(arr[i]);
+		}
 		sc.close();
 	}
 }

@@ -33,5 +33,6 @@ public class matrixAddition {
             }
             System.out.println();
         }
+        sc.close();
     }
 }

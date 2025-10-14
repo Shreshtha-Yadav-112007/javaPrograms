@@ -12,5 +12,6 @@ public class Main
 		} else if(num==5) {
 		    System.out.println("Entered number is equal to 5");
 		}
+		sc.close();
 	}
 }

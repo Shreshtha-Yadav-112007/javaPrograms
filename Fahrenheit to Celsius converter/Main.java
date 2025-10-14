@@ -6,5 +6,6 @@ public class Main
 		double fahrenheit = sc.nextDouble();
 		double celsius = (fahrenheit-32)/1.8;
 		System.out.printf("Fahrenheit converted to celsius is: %.2f",celsius);
+		sc.close();
 	}
 }

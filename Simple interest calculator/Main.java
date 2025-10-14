@@ -9,5 +9,6 @@ public class Main
 		time = sc.nextDouble();
 		double simple_interest = (principal*rate*time);
 		System.out.printf("The simple interest is: "+"%.2f",simple_interest);
+		sc.close();
 	}
 }
