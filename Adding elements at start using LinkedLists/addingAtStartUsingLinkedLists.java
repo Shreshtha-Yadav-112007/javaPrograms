@@ -27,7 +27,6 @@ public class addingAtStartUsingLinkedLists {
             System.out.print(currNode.data+" ");
             currNode=currNode.next;
         }
-        System.out.print("Null");
         return;
     }
     public static void main(String[] args) {

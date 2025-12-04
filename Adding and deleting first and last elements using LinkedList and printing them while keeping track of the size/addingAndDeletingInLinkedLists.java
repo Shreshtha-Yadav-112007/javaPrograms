@@ -1,65 +1,66 @@
-public class LLPrac {
-    Node head;
-    private int size;
-    LLPrac (){
+public class addingAndDeletingInLinkedLists {
+    public int size;
+    addingAndDeletingInLinkedLists(){
         this.size=0;
     }
+    Node head;
     class Node{
         String data;
         Node next;
         Node(String data){
-            this.data=data;
-            this.next=null;
+            this.data = data;
+            this.next = null;
             size++;
         }
     }
     public void addFirst(String data){
         Node newNode = new Node(data);
         if(head==null){
-            head = newNode;
+            head=newNode;
             return;
         }
         newNode.next = head;
-        head = newNode;
+        head=newNode;
         return;
     }
     public void addLast(String data){
         Node newNode = new Node(data);
         if(head==null){
-            head = newNode;
+            head=newNode;
             return;
         }
         Node currNode = head;
         while(currNode.next!=null){
             currNode = currNode.next;
         }
-        currNode.next=newNode;
-    }
-    public void printLinkedList(){
-    Node currNode = head;
-    while(currNode!=null){
-        System.out.print(currNode.data+" ");
-        currNode=currNode.next;
-        }
-        System.out.println("NULL");
-        return;
+        currNode.next = newNode;
     }
     public void deleteFirst(){
         if(head==null){
-            System.out.println("The linked list is empty.");
             return;
         }
+        size--;
         if(head.next==null){
             head=null;
             return;
         }
-        size--;
         head=head.next;
+        return;
+    }
+    public void printLinkedList(){
+        if(head==null){
+            System.out.println("LinkedList is empty.");
+            return;
+        }
+        Node currNode = head;
+        while(currNode!=null){
+            System.out.print(currNode.data+" ");
+            currNode=currNode.next;
+        }
         return;
     }
     public void deleteLast(){
         if(head==null){
-            System.out.println("The Linked List is empty.");
             return;
         }
         size--;
@@ -80,14 +81,13 @@ public class LLPrac {
         return size;
     }
     public static void main(String[] args) {
-        LLPrac LinkedList = new LLPrac();
-        LinkedList.addFirst("Hi!");
-        LinkedList.addFirst("Yo!");
-        LinkedList.addLast("Wassup!");
-        LinkedList.addLast("Voila!");
+        addingAndDeletingInLinkedLists LinkedList = new addingAndDeletingInLinkedLists();
+        LinkedList.addFirst("Shreshtha!");
+        LinkedList.addFirst("Hi");
+        LinkedList.addLast("LOL");
         LinkedList.deleteFirst();
         LinkedList.deleteLast();
-        System.out.println(LinkedList.getSize());
         LinkedList.printLinkedList();
+        System.out.println(LinkedList.getSize());
     }
 }
